@@ -10,7 +10,6 @@
 		<div class="row">
 			<div class="col-sm-2">
 				<img src="/images/{{$profile->picture}}" style="width:150px; height:150px; float:left; border-radius:50%; margin:0 auto">
-				{{-- <button style="display:block;width:120px; height:30px; margin:0 auto" onclick="document.getElementById('getFile').click()">Choose File</button> --}}
 				<input type="file" name="picture">
 			</div>
 

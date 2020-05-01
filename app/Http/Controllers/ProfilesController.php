@@ -37,7 +37,8 @@ class ProfilesController extends Controller
 
     public function updateProfile(Request $request, $id){
     	$request->validate([
-    		'name' => 'required|min:3|max:20'
+    		'name' => 'required|min:3|max:20',
+            'picture' => 'image'
     	]);
 
     	$profile = Profile::where('user_id', $id)->firstOrFail();

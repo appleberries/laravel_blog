@@ -34,7 +34,7 @@
                                         <td scope="row">{{$loop->index + 1}}</td>
                                         <td scope="row">{{$post->title}}</td>
                                         <td>
-                                            <a href="/posts/edit_post/{{$post->id}}" class="btn btn-dark">Edit</a>
+                                            <a style="vertical-align: text-bottom;" href="/posts/edit_post/{{$post->id}}" class="btn btn-dark">Edit</a>
                                         </td>
                                         <td>
                                             <form action="/posts/delete_post/{{$post->id}}" method="POST" class="float-right">
